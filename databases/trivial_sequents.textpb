@@ -1,0 +1,55 @@
+theorems {
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (a (c (fun (stable_sy) (fun (stable_sy) (stable_sy))) *:) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) p)))) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) q))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) p))) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) q))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 936659587600373112
+  library_tag: "c-DL.ml"
+  pretty_printed: "|-- (((ff ((Atom p))) **^ (ff ((Atom q)))) -->  (ff (( Atom p) ** (Atom q))))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 936659587600373112
+}
+
+theorems {
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) p))) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) q))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) p))) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) q))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1339491568342492226
+  library_tag: "c-DL.ml"
+  pretty_printed: "|--(ff ((Atom p) ** (Atom q)) --> gg ( (Atom p) ** (Atom q)))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1339491568342492226
+}
+
+theorems {
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (a (c (fun (stable_sy) (fun (stable_sy) (stable_sy))) *:) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) A))) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) N))))) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) N))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (list (char)) (loop)) drop0) (v (list (char)) A)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2258347083001939766
+  library_tag: "c-DL.ml"
+  pretty_printed: "|--(ff ( (Atom A) /. (Atom N)) **^ (ff (Atom N)) --> gg (Atom A))" 
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2258347083001939766
+}
+
+theorems {
+  conclusion: "(a (c (fun (fun (loop) (bool)) (bool)) !) (l (v (loop) A) (a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (v (loop) A))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) A))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1693479518508578392
+  library_tag: "c-DL.ml"
+  pretty_printed: "|- !A. |--(ff A --> gg A)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1693479518508578392
+}
+
+theorems {
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) X)) (v (loop) Y))) (v (loop) Y)))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) X))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 366514966443620809
+  library_tag: "c-DL.ml"
+  pretty_printed: "|-- (ff ( (X /. Y) ** Y)) --> gg X)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 366514966443620809
+}rint: 9999
+}

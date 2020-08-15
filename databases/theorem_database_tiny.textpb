@@ -1,0 +1,2486 @@
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (c (fun (bool) (fun (bool) (bool))) ==>)) (l (v (bool) p) (l (v (bool) q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) p)))))"
+  tag: DEFINITION
+  fingerprint: 3080552382863932591
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (v (fun (bool) (fun (bool) (bool))) ==>)) (l (v (bool) p) (l (v (bool) q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) p)))))"
+    constants: "==>"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (==>) = (\\p q. p /\\ q <=> p)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (c (fun (fun A (bool)) (bool)) !)) (l (v (fun A (bool)) P) (a (a (c (fun (fun A (bool)) (fun (fun A (bool)) (bool))) =) (v (fun A (bool)) P)) (l (v A x) (c (bool) T)))))"
+  tag: DEFINITION
+  fingerprint: 2341234844993805968
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (v (fun (fun A (bool)) (bool)) !)) (l (v (fun A (bool)) P) (a (a (c (fun (fun A (bool)) (fun (fun A (bool)) (bool))) =) (v (fun A (bool)) P)) (l (v A x) (c (bool) T)))))"
+    constants: "!"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (!) = (\\P. P = (\\x. T))"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (c (fun (fun A (bool)) (bool)) ?)) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) q) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) q))))) (v (bool) q))))))"
+  tag: DEFINITION
+  fingerprint: 2822235990580169360
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (v (fun (fun A (bool)) (bool)) ?)) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) q) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) q))))) (v (bool) q))))))"
+    constants: "?"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (?) = (\\P. !q. (!x. P x ==> q) ==> q)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (c (fun (bool) (fun (bool) (bool))) \\/)) (l (v (bool) p) (l (v (bool) q) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (v (bool) r))) (v (bool) r))))))))"
+  tag: DEFINITION
+  fingerprint: 391823513044753487
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (v (fun (bool) (fun (bool) (bool))) \\/)) (l (v (bool) p) (l (v (bool) q) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (v (bool) r))) (v (bool) r))))))))"
+    constants: "\\/"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (\\/) = (\\p q. !r. (p ==> r) ==> (q ==> r) ==> r)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (c (bool) F)) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (v (bool) p))))"
+  tag: DEFINITION
+  fingerprint: 1659812372288323646
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) F)) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (v (bool) p))))"
+    constants: "F"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- F <=> (!p. p)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (bool)) (fun (fun (bool) (bool)) (bool))) =) (c (fun (bool) (bool)) ~)) (l (v (bool) p) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (c (bool) F))))"
+  tag: DEFINITION
+  fingerprint: 880736149099756583
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (bool) (bool)) (fun (fun (bool) (bool)) (bool))) =) (v (fun (bool) (bool)) ~)) (l (v (bool) p) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (c (bool) F))))"
+    constants: "~"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (~) = (\\p. p ==> F)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (c (fun (fun A (bool)) (bool)) ?!)) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) P) (v A y)))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))))))))))"
+  tag: DEFINITION
+  fingerprint: 2194872630322781524
+  definition {
+    definition_type: "BASIC"
+    definition_term: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (v (fun (fun A (bool)) (bool)) ?!)) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) P) (v A y)))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))))))))))"
+    constants: "?!"
+  }
+  library_tag: "core"
+  library_tag: "bool.ml"
+  pretty_printed: "|- (?!) = (\\P. (?) P /\\ (!x y. P x /\\ P y ==> x = y))"
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (c (bool) _FALSITY_)) (c (bool) F))"
+  tag: DEFINITION
+  fingerprint: 3362909187751178318
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) _FALSITY_)) (c (bool) F))"
+    constants: "_FALSITY_"
+  }
+  library_tag: "core"
+  library_tag: "tactics.ml"
+  pretty_printed: "|- _FALSITY_ <=> F"
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 919902993909800581
+  library_tag: "core"
+  library_tag: "simp.ml"
+  pretty_printed: "|- p ==> q ==> r <=> p /\\ q ==> r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 919902993909800581
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun ?0 (bool)) P) (v ?0 x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun ?0 (bool)) (bool)) ?) (l (v ?0 x) (a (v (fun ?0 (bool)) P) (v ?0 x))))) (v (bool) Q)))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3716526260997458320
+  library_tag: "core"
+  library_tag: "simp.ml"
+  pretty_printed: "|- (!x. P x ==> Q) <=> (?x. P x) ==> Q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3716526260997458320
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A x))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3459657839204525272
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !x. x = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3459657839204525272
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A x))) (c (bool) T))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2109425092022597721
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  library_tag: "c-fDL.ml"
+  pretty_printed: "|- !x. x = x <=> T"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2109425092022597721
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4244727170697809164
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !x y. x = y ==> y = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4244727170697809164
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1564373864581257982
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !x y. x = y <=> y = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1564373864581257982
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (c (fun (fun A (bool)) (bool)) !) (l (v A z) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A z)))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A z)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1706902491677675257
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !x y z. x = y /\\ y = z ==> x = z"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1706902491677675257
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun B (fun B (bool))) =) (a (l (v A x) (a (v (fun A B) f) (v A x))) (v A y))) (a (v (fun A B) f) (v A y)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4389303588181648984
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !f y. (\\x. f x) y = f y"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4389303588181648984
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A t1) (a (c (fun (fun B (bool)) (bool)) !) (l (v B t2) (a (a (c (fun A (fun A (bool))) =) (a (l (v B x) (v A t1)) (v B t2))) (v A t1))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 4452655282978696455
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  library_tag: "c-fDL.ml"
+  pretty_printed: "|- !t1 t2. (\\x. t1) t2 = t1"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4452655282978696455
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t3) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t1)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t2)) (v (bool) t3)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t1)) (v (bool) t2))) (v (bool) t3)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1236147265275232190
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t1 t2 t3. t1 /\\ t2 /\\ t3 <=> (t1 /\\ t2) /\\ t3"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1236147265275232190
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t1)) (v (bool) t2))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t2)) (v (bool) t1)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 183126649061856388
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t1 t2. t1 /\\ t2 <=> t2 /\\ t1"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 183126649061856388
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) p)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) p))) (v (bool) p))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2811381786271539603
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (p /\\ q <=> q /\\ p) /\\  ((p /\\ q) /\\ r <=> p /\\ q /\\ r) /\\  (p /\\ q /\\ r <=> q /\\ p /\\ r) /\\  (p /\\ p <=> p) /\\  (p /\\ p /\\ q <=> p /\\ q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2811381786271539603
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t3) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t1)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t2)) (v (bool) t3)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t1)) (v (bool) t2))) (v (bool) t3)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3300548527846353030
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t1 t2 t3. t1 \\/ t2 \\/ t3 <=> (t1 \\/ t2) \\/ t3"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3300548527846353030
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t1)) (v (bool) t2))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t2)) (v (bool) t1)))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 986694786535376657
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  library_tag: "c-fDL.ml"
+  pretty_printed: "|- !t1 t2. t1 \\/ t2 <=> t2 \\/ t1"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 986694786535376657
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) q)) (v (bool) p)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) q)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) p))) (v (bool) p))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2525030685148683581
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (p \\/ q <=> q \\/ p) /\\  ((p \\/ q) \\/ r <=> p \\/ q \\/ r) /\\  (p \\/ q \\/ r <=> q \\/ p \\/ r) /\\  (p \\/ p <=> p) /\\  (p \\/ p \\/ q <=> p \\/ q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2525030685148683581
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (v (bool) r))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2913476677776032130
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- p /\\ q ==> r <=> p ==> q ==> r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2913476677776032130
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) r))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4051032686504090312
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- p /\\ q ==> r <=> q ==> p ==> r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4051032686504090312
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) q) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4225845144686859517
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !p q r. p /\\ (q \\/ r) <=> p /\\ q \\/ p /\\ r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4225845144686859517
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) q) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r))))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1355080407099472983
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !p q r. (p \\/ q) /\\ r <=> p /\\ r \\/ q /\\ r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1355080407099472983
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) t)))) (v (bool) t))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2197322268644067629
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. (!x. t) <=> t"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2197322268644067629
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) t)))) (v (bool) t))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1241139922658062205
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. (?x. t) <=> t"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1241139922658062205
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) b)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1843761177268772014
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (a <=> b) ==> a ==> b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1843761177268772014
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (c (bool) T)) (v (bool) t))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) T))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (c (bool) F)) (v (bool) t))) (a (c (fun (bool) (bool)) ~) (v (bool) t)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) F))) (a (c (fun (bool) (bool)) ~) (v (bool) t))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1085164203265094320
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. ((T <=> t) <=> t) /\\    ((t <=> T) <=> t) /\\    ((F <=> t) <=> ~t) /\\    ((t <=> F) <=> ~t)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1085164203265094320
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (c (bool) T))) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (c (bool) F))) (c (bool) T)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 352392089258498881
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (~T <=> F) /\\ (~F <=> T)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 352392089258498881
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (c (bool) T)) (v (bool) t))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t)) (c (bool) T))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (c (bool) F)) (v (bool) t))) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t)) (c (bool) F))) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t)) (v (bool) t))) (v (bool) t))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4033952725031291549
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. (T /\\ t <=> t) /\\    (t /\\ T <=> t) /\\    (F /\\ t <=> F) /\\    (t /\\ F <=> F) /\\    (t /\\ t <=> t)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4033952725031291549
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (c (bool) T)) (v (bool) t))) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t)) (c (bool) T))) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (c (bool) F)) (v (bool) t))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t)) (c (bool) F))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t)) (v (bool) t))) (v (bool) t))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1430719896099509486
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. (T \\/ t <=> T) /\\    (t \\/ T <=> T) /\\    (F \\/ t <=> t) /\\    (t \\/ F <=> t) /\\    (t \\/ t <=> t)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1430719896099509486
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (c (bool) T)) (v (bool) t))) (v (bool) t))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) t)) (c (bool) T))) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (c (bool) F)) (v (bool) t))) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) t)) (v (bool) t))) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) t)) (c (bool) F))) (a (c (fun (bool) (bool)) ~) (v (bool) t)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1477165434678004011
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !t. (T ==> t <=> t) /\\    (t ==> T <=> T) /\\    (F ==> t <=> T) /\\    (t ==> t <=> T) /\\    (t ==> F <=> ~t)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1477165434678004011
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 x)) (v ?0 x))) (v (bool) p))) (v (bool) p))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1069658650867837718
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- x = x ==> p <=> p"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1069658650867837718
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) p\'))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p\')) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) q)) (v (bool) q\')))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p\')) (v (bool) q\')))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 600679008628789930
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (p <=> p\') ==> (p\' ==> (q <=> q\')) ==> (p ==> q <=> p\' ==> q\')"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 600679008628789930
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?!) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x\') (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) P) (v A x\')))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A x\')))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 360447338848283594
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P. (?!x. P x) <=> (?x. P x) /\\ (!x x\'. P x /\\ P x\' ==> x = x\')"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 360447338848283594
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A a))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3913291935790827968
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !a. ?x. x = a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3913291935790827968
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (c (fun (fun A (bool)) (bool)) ?!) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A a))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3568652882826025348
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !a. ?!x. x = a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3568652882826025348
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (v A a)) (v A x))) (a (v (fun A (bool)) P) (v A x)))))) (a (v (fun A (bool)) P) (v A a)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2288052310503898628
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P a. (?x. a = x /\\ P x) <=> P a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2288052310503898628
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A a))) (a (v (fun A (bool)) P) (v A x)))))) (a (v (fun A (bool)) P) (v A a)))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3953023346715430631
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P a. (?x. x = a /\\ P x) <=> P a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3953023346715430631
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A a))) (a (v (fun A (bool)) P) (v A x)))))) (a (v (fun A (bool)) P) (v A a)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 59422224985000989
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P a. (!x. x = a ==> P x) <=> P a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 59422224985000989
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun ?0 (bool)) (bool)) (bool)) !) (l (v (fun ?0 (bool)) P) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 a) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 a)) (v ?0 x))) (a (v (fun ?0 (bool)) P) (v ?0 x)))))) (a (v (fun ?0 (bool)) P) (v ?0 a)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1539985633556144865
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P a. (!x. a = x ==> P x) <=> P a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1539985633556144865
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (fun B (bool))) (bool)) (bool)) !) (l (v (fun A (fun B (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun B (bool)) (bool)) !) (l (v B y) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))))))) (a (c (fun (fun B (bool)) (bool)) !) (l (v B y) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4316752623609269416
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P. (!x y. P x y) <=> (!y x. P x y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4316752623609269416
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (fun B (bool))) (bool)) (bool)) !) (l (v (fun A (fun B (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (fun B (bool)) (bool)) ?) (l (v B y) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))))))) (a (c (fun (fun B (bool)) (bool)) ?) (l (v B y) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4474411084152875483
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P. (?x y. P x y) <=> (?y x. P x y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4474411084152875483
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1598846797968203432
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P x /\\ Q x) <=> (!x. P x) /\\ (!x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1598846797968203432
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 619427301977018523
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P x) /\\ (!x. Q x) <=> (!x. P x /\\ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 619427301977018523
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4333020478253274202
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P x) /\\ Q <=> (!x. P x /\\ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4333020478253274202
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3222032287516617505
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. P /\\ (!x. Q x) <=> (!x. P /\\ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3222032287516617505
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 484919622773309327
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x \\/ Q x) <=> (?x. P x) \\/ (?x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 484919622773309327
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2127739380704901188
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x) \\/ (?x. Q x) <=> (?x. P x \\/ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2127739380704901188
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3398062046374349989
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x) \\/ Q <=> (?x. P x \\/ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3398062046374349989
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 242822195815303573
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. P \\/ (?x. Q x) <=> (?x. P \\/ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 242822195815303573
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q)))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1572727804981334466
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x /\\ Q) <=> (?x. P x) /\\ Q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1572727804981334466
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2549460814349623404
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P /\\ Q x) <=> P /\\ (?x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2549460814349623404
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1996195018145846150
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P /\\ Q) <=> (?x. P) /\\ (?x. Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1996195018145846150
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3364425104529652846
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x) /\\ Q <=> (?x. P x /\\ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3364425104529652846
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3739160786816999866
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. P /\\ (?x. Q x) <=> (?x. P /\\ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3739160786816999866
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) Q))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) P)) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4140044282380572285
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P) /\\ (?x. Q) <=> (?x. P /\\ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4140044282380572285
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2541848591342493469
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P \\/ Q) <=> (!x. P) \\/ (!x. Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2541848591342493469
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) Q))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1247328780493585448
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P) \\/ (!x. Q) <=> (!x. P \\/ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1247328780493585448
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4432927027650125967
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. P ==> (!x. Q x) <=> (!x. P ==> Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4432927027650125967
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 762252014957526158
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P ==> Q x) <=> P ==> (!x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 762252014957526158
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4360742624953286226
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P x) ==> Q <=> (!x. P x ==> Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4360742624953286226
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4514963508507700144
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P x ==> Q) <=> (?x. P x) ==> Q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4514963508507700144
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 4558772580413121024
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (!x. P ==> Q) <=> (?x. P) ==> (!x. Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4558772580413121024
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (v (bool) P)))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3721225712305225075
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P Q. (?x. P ==> Q) <=> (!x. P) ==> (?x. Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3721225712305225075
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3736755200931822168
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (A ==> B) /\\ (C ==> D) ==> A /\\ C ==> B /\\ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3736755200931822168
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4582309176033532057
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (A ==> B) /\\ (C ==> D) ==> A \\/ C ==> B \\/ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4582309176033532057
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2625513815284531316
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (B ==> A) /\\ (C ==> D) ==> (A ==> C) ==> B ==> D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2625513815284531316
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) A))) (a (c (fun (bool) (bool)) ~) (v (bool) B))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 748714918528269670
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (B ==> A) ==> ~A ==> ~B"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 748714918528269670
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1556600283085062211
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (!x. P x ==> Q x) ==> (!x. P x) ==> (!x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1556600283085062211
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2136349958419772217
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (!x. P x ==> Q x) ==> (?x. P x) ==> (?x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2136349958419772217
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun ?0 (fun ?0 (bool))) (bool)) (bool)) !) (l (v (fun ?0 (fun ?0 (bool))) R) (a (c (fun (fun (fun ?0 (fun ?0 (bool))) (bool)) (bool)) !) (l (v (fun ?0 (fun ?0 (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (v (fun ?0 (fun ?0 (bool))) P) (v ?0 x)) (v ?0 y))) (a (a (v (fun ?0 (fun ?0 (bool))) P) (v ?0 y)) (v ?0 x)))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 y) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (v (fun ?0 (fun ?0 (bool))) R) (v ?0 x)) (v ?0 y))) (a (a (v (fun ?0 (fun ?0 (bool))) R) (v ?0 y)) (v ?0 x)))))))) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (v (fun ?0 (fun ?0 (bool))) R) (v ?0 x)) (v ?0 y))) (a (a (v (fun ?0 (fun ?0 (bool))) P) (v ?0 x)) (v ?0 y)))))))))) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 y) (a (a (v (fun ?0 (fun ?0 (bool))) P) (v ?0 x)) (v ?0 y)))))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1452682089169460430
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !R P.    (!x y. P x y ==> P y x) /\\    (!x y. R x y \\/ R y x) /\\    (!x y. R x y ==> P x y)    ==> (!x y. P x y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1452682089169460430
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?!) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (v (fun A (bool)) P) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 311721856790141542
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P. (?!x. P x) <=> (?x. !y. P y <=> x = y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 311721856790141542
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) b)) (v (bool) a))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3158068480668451995
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- (a <=> b) <=> (a ==> b) /\\ (b ==> a)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3158068480668451995
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?!) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x)))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2906858494091828027
+  library_tag: "core"
+  library_tag: "theorems.ml"
+  pretty_printed: "|- !P. (?!x. P x) <=> (?x. P x /\\ (!y. P y ==> y = x))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2906858494091828027
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun A (bool)) (bool)) !) (l (v A t) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A t))) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1860144254089002358
+  library_tag: "core"
+  library_tag: "ind_defs.ml"
+  pretty_printed: "|- !P t. (!x. x = t ==> P x) ==> (?) P"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1860144254089002358
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) p))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1698597874118327243
+  library_tag: "core"
+  library_tag: "ind_defs.ml"
+  pretty_printed: "|- !p. p ==> p"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1698597874118327243
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (l (v A x) (a (v (fun A B) t) (v A x)))) (v (fun A B) t))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2441195570417863065
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (\\x. t x) = t"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2441195570417863065
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun B (fun B (bool))) =) (a (v (fun A B) f) (v A x))) (a (v (fun A B) g) (v A x)))))) (a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (v (fun A B) f)) (v (fun A B) g)))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 679005877135110015
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !f g. (!x. f x = g x) ==> f = g"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 679005877135110015
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (v (fun A B) f)) (v (fun A B) g))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun B (fun B (bool))) =) (a (v (fun A B) f) (v A x))) (a (v (fun A B) g) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2315034643559247104
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !f g. f = g <=> (!x. f x = g x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2315034643559247104
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (fun A (bool)) (bool)) (fun (fun (fun A (bool)) (bool)) (bool))) =) (c (fun (fun A (bool)) (bool)) ?)) (l (v (fun A (bool)) P) (a (v (fun A (bool)) P) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 421915263640211727
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (?) = (\\P. P ((@) P))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 421915263640211727
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P))) (a (v (fun A (bool)) P) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2607567336338615509
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (?) P ==> P ((@) P)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2607567336338615509
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (v (fun A (bool)) P) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P)))) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1555983424522344496
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- P ((@) P) <=> (?) P"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1555983424522344496
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (a (c (fun (fun A (bool)) A) @) (l (v A y) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x))))) (v A x))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1665133142204816870
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !x. (@y. y = x) = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1665133142204816870
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (v (fun A (bool)) P) (v A y))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x)))))) (a (a (c (fun A (fun A (bool))) =) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P))) (v A x)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1168164014968023396
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P x. (!y. P y <=> y = x) ==> (@) P = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1168164014968023396
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (c (bool) T))) (c (bool) T))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 112687688646739200
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- p \\/ T <=> T"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 112687688646739200
+}
+theorems {
+  conclusion: "(a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) =) (c (bool) T)) (c (bool) F)))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4336588608524024814
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- ~(T <=> F)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4336588608524024814
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t)) (a (c (fun (bool) (bool)) ~) (v (bool) t)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3308271424913223125
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t. t \\/ ~t"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3308271424913223125
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) F)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3940536481208086414
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t. (t <=> T) \\/ (t <=> F)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3940536481208086414
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t1)) (v (bool) t2)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) t1))) (a (c (fun (bool) (bool)) ~) (v (bool) t2))))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) t1)) (v (bool) t2)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) t1))) (a (c (fun (bool) (bool)) ~) (v (bool) t2)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2683027776552938252
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t1 t2. (~(t1 /\\ t2) <=> ~t1 \\/ ~t2) /\\ (~(t1 \\/ t2) <=> ~t1 /\\ ~t2)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2683027776552938252
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (bool) (bool)) ~) (v (bool) t)))) (v (bool) t))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (c (bool) T))) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (c (bool) F))) (c (bool) T))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 211763446623711008
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (!t. ~ ~t <=> t) /\\ (~T <=> F) /\\ (~F <=> T)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 211763446623711008
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) t1)) (v (bool) t2)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) t1)) (a (c (fun (bool) (bool)) ~) (v (bool) t2))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 944324365797863778
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t1 t2. ~(t1 ==> t2) <=> t1 /\\ ~t2"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 944324365797863778
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) t1))) (a (c (fun (bool) (bool)) ~) (v (bool) t2)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) t2)) (v (bool) t1)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2012640948690278230
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t1 t2. ~t1 ==> ~t2 <=> t2 ==> t1"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2012640948690278230
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) P))) (c (bool) F))) (v (bool) P))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3909909050728755763
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (~P ==> F) ==> P"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3909909050728755763
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (a (c (fun (bool) (bool)) ~) (v (bool) a))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2857700796108858277
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- a ==> b <=> ~b ==> ~a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2857700796108858277
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (c (bool) F)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3713350661807540262
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- p <=> ~p ==> F"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3713350661807540262
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3533624429636773518
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. ~(?x. P x) <=> (!x. ~P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3533624429636773518
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (a (c (fun (bool) (bool)) ~) (v (bool) b)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) b)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2548669073274277077
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (a <=> ~b) <=> ~a <=> b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2548669073274277077
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1403702005613348753
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. (?x. ~P x) <=> ~(!x. P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1403702005613348753
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 773808888572907911
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. ~(!x. P x) <=> (?x. ~P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 773808888572907911
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3814569363214785436
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. (!x. ~P x) <=> ~(?x. P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3814569363214785436
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (v (fun (bool) (bool)) P) (v (bool) b))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun (bool) (bool)) P) (c (bool) T))) (a (v (fun (bool) (bool)) P) (c (bool) F))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4346585622969646480
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (!b. P b) <=> P T /\\ P F"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4346585622969646480
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (c (fun (bool) (bool)) ~) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) q)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 11906042607121640
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (~p <=> ~q) ==> (p <=> q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 11906042607121640
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun (bool) (bool)) (bool)) ?) (l (v (bool) b) (a (v (fun (bool) (bool)) P) (v (bool) b))))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun (bool) (bool)) P) (c (bool) T))) (a (v (fun (bool) (bool)) P) (c (bool) F))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1451827865767298714
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (?b. P b) <=> P T \\/ P F"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1451827865767298714
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (c (fun (bool) (bool)) ~) (v (bool) b))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3186310208252351940
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (a <=> b) <=> ~a <=> ~b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3186310208252351940
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1951480795470293242
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (!x. P x \\/ Q) <=> (!x. P x) \\/ Q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1951480795470293242
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4114285903251095506
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (!x. P \\/ Q x) <=> P \\/ (!x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4114285903251095506
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 699976075396619947
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (!x. P x) \\/ Q <=> (!x. P x \\/ Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 699976075396619947
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1994621868974478726
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. P \\/ (!x. Q x) <=> (!x. P \\/ Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1994621868974478726
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1041278397167009944
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (!x. P x) ==> Q <=> (?x. P x ==> Q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1041278397167009944
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun A (bool)) P) (v A x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (v (bool) Q)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1124271433710135282
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (?x. P x ==> Q) <=> (!x. P x) ==> Q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1124271433710135282
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2741175078385243613
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. P ==> (?x. Q x) <=> (?x. P ==> Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2741175078385243613
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) P) (a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) Q) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (v (fun A (bool)) Q) (v A x)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) Q) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1746238313195441644
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P Q. (?x. P ==> Q x) <=> P ==> (?x. Q x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1746238313195441644
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (fun A (fun A A))) (fun (fun (bool) (fun A (fun A A))) (bool))) =) (c (fun (bool) (fun A (fun A A))) COND)) (l (v (bool) t) (l (v A t1) (l (v A t2) (a (c (fun (fun A (bool)) A) @) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) T))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A t1)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) F))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A t2))))))))))"
+  tag: DEFINITION
+  fingerprint: 330991731825274556
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun (bool) (fun A (fun A A))) (fun (fun (bool) (fun A (fun A A))) (bool))) =) (v (fun (bool) (fun A (fun A A))) COND)) (l (v (bool) t) (l (v A t1) (l (v A t2) (a (c (fun (fun A (bool)) A) @) (l (v A x) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) T))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A t1)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) t)) (c (bool) F))) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A t2))))))))))"
+    constants: "COND"
+  }
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- COND = (\\t t1 t2. @x. ((t <=> T) ==> x = t1) /\\ ((t <=> F) ==> x = t2))"
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A t1) (a (c (fun (fun A (bool)) (bool)) !) (l (v A t2) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (c (bool) T)) (v A t1)) (v A t2))) (v A t1))) (a (a (c (fun A (fun A (bool))) =) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (c (bool) F)) (v A t1)) (v A t2))) (v A t2)))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2987496348451334207
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !t1 t2. (if T then t1 else t2) = t1 /\\ (if F then t1 else t2) = t2"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2987496348451334207
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t1) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) t2) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (a (c (fun (bool) (fun (bool) (fun (bool) (bool)))) COND) (v (bool) b)) (v (bool) t1)) (v (bool) t2))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (v (bool) t1))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (v (bool) t2))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2015543307626321633
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !b t1 t2. (if b then t1 else t2) <=> (~b \\/ t1) /\\ (b \\/ t2)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2015543307626321633
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun A (bool)) (bool)) !) (l (v A t) (a (a (c (fun A (fun A (bool))) =) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (v (bool) b)) (v A t)) (v A t))) (v A t))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2956146801143607915
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !b t. (if b then t else t) = t"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2956146801143607915
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun B (fun B (bool))) =) (a (v (fun A B) f) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (v (bool) b)) (v A x)) (v A y)))) (a (a (a (c (fun (bool) (fun B (fun B B))) COND) (v (bool) b)) (a (v (fun A B) f) (v A x))) (a (v (fun A B) f) (v A y))))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1471035232732617433
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !b f x y. f (if b then x else y) = (if b then f x else f y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1471035232732617433
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun B (fun B (bool))) =) (a (a (a (a (c (fun (bool) (fun (fun A B) (fun (fun A B) (fun A B)))) COND) (v (bool) b)) (v (fun A B) f)) (v (fun A B) g)) (v A x))) (a (a (a (c (fun (bool) (fun B (fun B B))) COND) (v (bool) b)) (a (v (fun A B) f) (v A x))) (a (v (fun A B) g) (v A x))))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4005132228939110695
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !b f g x. (if b then f else g) x = (if b then f x else g x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4005132228939110695
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (l (v A x) (a (a (a (c (fun (bool) (fun B (fun B B))) COND) (v (bool) b)) (a (v (fun A B) f) (v A x))) (a (v (fun A B) g) (v A x))))) (a (a (a (c (fun (bool) (fun (fun A B) (fun (fun A B) (fun A B)))) COND) (v (bool) b)) (v (fun A B) f)) (v (fun A B) g)))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3148770601236384029
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !b f g. (\\x. if b then f x else g x) = (if b then f else g)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3148770601236384029
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) p) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun A (fun A (bool))) =) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (v A x)) (v A y))) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (v (bool) p)) (v A y)) (v A x)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 211357163911822530
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !p x y. (if ~p then x else y) = (if p then y else x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 211357163911822530
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (a (c (fun (bool) (fun (bool) (fun (bool) (bool)))) COND) (v (bool) b)) (v (bool) A)) (v (bool) C))) (a (a (a (c (fun (bool) (fun (bool) (fun (bool) (bool)))) COND) (v (bool) b)) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3217217488917139619
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (A ==> B) /\\ (C ==> D) ==> (if b then A else C) ==> (if b then B else D)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3217217488917139619
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (v (fun A (bool)) P) (a (a (a (c (fun (bool) (fun A (fun A A))) COND) (v (bool) c)) (v A x)) (v A y)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) c)) (a (v (fun A (bool)) P) (v A x)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) c))) (a (v (fun A (bool)) P) (v A y)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4370111904101945142
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- P (if c then x else y) <=> (c ==> P x) /\\ (~c ==> P y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4370111904101945142
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (bool) (bool)) ~) (v (bool) p)))) (v (bool) p))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1657536395029832358
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- ~ ~p <=> p"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1657536395029832358
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (fun B (bool))) (bool)) (bool)) !) (l (v (fun A (fun B (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun B (bool)) (bool)) ?) (l (v B y) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))))))) (a (c (fun (fun (fun A B) (bool)) (bool)) ?) (l (v (fun A B) y) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (v (fun A (fun B (bool))) P) (v A x)) (a (v (fun A B) y) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2476428445671310274
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. (!x. ?y. P x y) <=> (?y. !x. P x (y x))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2476428445671310274
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun ?0 (bool)) (bool)) (bool)) !) (l (v (fun ?0 (bool)) P) (a (c (fun (fun ?2 (bool)) (bool)) !) (l (v ?2 s) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun ?0 (bool)) P) (v ?0 x))) (a (c (fun (fun ?1 (bool)) (bool)) ?) (l (v ?1 y) (a (a (v (fun ?0 (fun ?1 (bool))) R) (v ?0 x)) (v ?1 y)))))))) (a (c (fun (fun (fun ?0 ?1) (bool)) (bool)) ?) (l (v (fun ?0 ?1) f) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun ?0 (bool)) P) (v ?0 x))) (a (a (v (fun ?0 (fun ?1 (bool))) R) (v ?0 x)) (a (v (fun ?0 ?1) f) (v ?0 x)))))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 254007885270310087
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P s. (!x. P x ==> (?y. R x y)) <=> (?f. !x. P x ==> R x (f x))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 254007885270310087
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (fun B (bool))) (bool)) (bool)) !) (l (v (fun A (fun B (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun B (bool)) (bool)) ?!) (l (v B y) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))))))) (a (c (fun (fun (fun A B) (bool)) (bool)) ?) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun B (bool)) (bool)) !) (l (v B y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))) (a (a (c (fun B (fun B (bool))) =) (a (v (fun A B) f) (v A x))) (v B y))))))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1004008168637011311
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. (!x. ?!y. P x y) <=> (?f. !x y. P x y <=> f x = y)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1004008168637011311
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (fun B (bool))) (bool)) (bool)) !) (l (v (fun A (fun B (bool))) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun B (bool)) (bool)) ?!) (l (v B y) (a (a (v (fun A (fun B (bool))) P) (v A x)) (v B y))))))) (a (c (fun (fun (fun A B) (bool)) (bool)) ?!) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (v (fun A (fun B (bool))) P) (v A x)) (a (v (fun A B) f) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3934195270252224170
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. (!x. ?!y. P x y) <=> (?!f. !x. P x (f x))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3934195270252224170
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) g)) (v (bool) g\'))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) g\')) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 t)) (v ?0 t\')))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) g\'))) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 e)) (v ?0 e\')))) (a (a (c (fun ?0 (fun ?0 (bool))) =) (a (a (a (c (fun (bool) (fun ?0 (fun ?0 ?0))) COND) (v (bool) g)) (v ?0 t)) (v ?0 e))) (a (a (a (c (fun (bool) (fun ?0 (fun ?0 ?0))) COND) (v (bool) g\')) (v ?0 t\')) (v ?0 e\'))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1848780188439672541
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (g <=> g\')  ==> (g\' ==> t = t\')  ==> (~g\' ==> e = e\')  ==> (if g then t else e) = (if g\' then t\' else e\')"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1848780188439672541
+}
+theorems {
+  conclusion: "(a (a (c (fun ?0 (fun ?0 (bool))) =) (a (a (a (c (fun (bool) (fun ?0 (fun ?0 ?0))) COND) (a (a (c (fun ?1 (fun ?1 (bool))) =) (v ?1 x)) (v ?1 x))) (v ?0 y)) (v ?0 z))) (v ?0 y))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3240043367128240453
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- (if x = x then y else z) = y"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3240043367128240453
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun (bool) (bool)) (bool)) (bool)) !) (l (v (fun (bool) (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun (bool) (bool)) P) (c (bool) F))) (a (v (fun (bool) (bool)) P) (c (bool) T)))) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) x) (a (v (fun (bool) (bool)) P) (v (bool) x)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4097301585932165456
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !P. P F /\\ P T ==> (!x. P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4097301585932165456
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (c (fun (fun A (bool)) (bool)) !) (l (v A b) (a (c (fun (fun (fun (bool) A) (bool)) (bool)) ?) (l (v (fun (bool) A) f) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (a (v (fun (bool) A) f) (c (bool) F))) (v A a))) (a (a (c (fun A (fun A (bool))) =) (a (v (fun (bool) A) f) (c (bool) T))) (v A b)))))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3786795048884572627
+  library_tag: "core"
+  library_tag: "class.ml"
+  pretty_printed: "|- !a b. ?f. f F = a /\\ f T = b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3786795048884572627
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun B C) (bool)) (bool)) !) (l (v (fun B C) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (a (c (fun (fun A C) (fun (fun A C) (bool))) =) (a (a (c (fun (fun B C) (fun (fun A B) (fun A C))) o) (v (fun B C) f)) (v (fun A B) g))) (l (v A x) (a (v (fun B C) f) (a (v (fun A B) g) (v A x)))))))))"
+  tag: DEFINITION
+  fingerprint: 4383522219395595822
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun A C) (fun (fun A C) (bool))) =) (a (a (v (fun (fun B C) (fun (fun A B) (fun A C))) o) (v (fun B C) f)) (v (fun A B) g))) (l (v A x) (a (v (fun B C) f) (a (v (fun A B) g) (v A x)))))"
+    constants: "o"
+  }
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !f g. f o g = (\\x. f (g x))"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun A A) (fun (fun A A) (bool))) =) (c (fun A A) I)) (l (v A x) (v A x)))"
+  tag: DEFINITION
+  fingerprint: 4364475697046751454
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun A A) (fun (fun A A) (bool))) =) (v (fun A A) I)) (l (v A x) (v A x)))"
+    constants: "I"
+  }
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- I = (\\x. x)"
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun B C) (bool)) (bool)) !) (l (v (fun B C) f) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) g) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun C (fun C (bool))) =) (a (a (a (c (fun (fun B C) (fun (fun A B) (fun A C))) o) (v (fun B C) f)) (v (fun A B) g)) (v A x))) (a (v (fun B C) f) (a (v (fun A B) g) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3420247072359141304
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !f g x. (f o g) x = f (g x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3420247072359141304
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun C D) (bool)) (bool)) !) (l (v (fun C D) f) (a (c (fun (fun (fun B C) (bool)) (bool)) !) (l (v (fun B C) g) (a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) h) (a (a (c (fun (fun A D) (fun (fun A D) (bool))) =) (a (a (c (fun (fun C D) (fun (fun A C) (fun A D))) o) (v (fun C D) f)) (a (a (c (fun (fun B C) (fun (fun A B) (fun A C))) o) (v (fun B C) g)) (v (fun A B) h)))) (a (a (c (fun (fun B D) (fun (fun A B) (fun A D))) o) (a (a (c (fun (fun C D) (fun (fun B C) (fun B D))) o) (v (fun C D) f)) (v (fun B C) g))) (v (fun A B) h)))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 291458924676625619
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !f g h. f o g o h = (f o g) o h"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 291458924676625619
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (a (c (fun A A) I) (v A x))) (v A x))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3832986206091857001
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !x. I x = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3832986206091857001
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (a (a (c (fun (fun B B) (fun (fun A B) (fun A B))) o) (c (fun B B) I)) (v (fun A B) f))) (v (fun A B) f))) (a (a (c (fun (fun A B) (fun (fun A B) (bool))) =) (a (a (c (fun (fun A B) (fun (fun A A) (fun A B))) o) (v (fun A B) f)) (c (fun A A) I))) (v (fun A B) f)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4205637068845381205
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !f. I o f = f /\\ f o I = f"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4205637068845381205
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) ?) (l (v (bool) b) (v (bool) b)))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2374932677073467653
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- ?b. b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2374932677073467653
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun (1) (bool)) (bool)) !) (l (v (1) a) (a (a (c (fun (1) (fun (1) (bool))) =) (a (c (fun (bool) (1)) one_ABS) (a (c (fun (1) (bool)) one_REP) (v (1) a)))) (v (1) a))))) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) r)) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (1) (bool)) one_REP) (a (c (fun (bool) (1)) one_ABS) (v (bool) r)))) (v (bool) r))))))"
+  tag: TYPE_DEFINITION
+  fingerprint: 2274834883252752888
+  type_definition {
+    type_name: "1"
+    abs_name: "one_ABS"
+    rep_name: "one_REP"
+    theorem_arg: 2374932677073467653
+  }
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- (!a. one_ABS (one_REP a) = a) /\\ (!r. r <=> one_REP (one_ABS r) <=> r)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (1) (fun (1) (bool))) =) (c (1) one)) (a (c (fun (fun (1) (bool)) (1)) @) (l (v (1) x) (c (bool) T))))"
+  tag: DEFINITION
+  fingerprint: 4131070040124959267
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (1) (fun (1) (bool))) =) (v (1) one)) (a (c (fun (fun (1) (bool)) (1)) @) (l (v (1) x) (c (bool) T))))"
+    constants: "one"
+  }
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- one = (@x. T)"
+}
+theorems {
+  conclusion: "(a (c (fun (fun (1) (bool)) (bool)) !) (l (v (1) v) (a (a (c (fun (1) (fun (1) (bool))) =) (v (1) v)) (c (1) one))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 418032020857963680
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !v. v = one"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 418032020857963680
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (1)) (bool)) (bool)) !) (l (v (fun A (1)) f) (a (c (fun (fun (fun A (1)) (bool)) (bool)) !) (l (v (fun A (1)) g) (a (a (c (fun (fun A (1)) (fun (fun A (1)) (bool))) =) (v (fun A (1)) f)) (v (fun A (1)) g))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3240764874282334528
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !f g. f = g"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3240764874282334528
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun (1) (bool)) (bool)) (bool)) !) (l (v (fun (1) (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun (1) (bool)) P) (c (1) one))) (a (c (fun (fun (1) (bool)) (bool)) !) (l (v (1) x) (a (v (fun (1) (bool)) P) (v (1) x)))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2554858800019567137
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !P. P one ==> (!x. P x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2554858800019567137
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A e) (a (c (fun (fun (fun (1) A) (bool)) (bool)) ?) (l (v (fun (1) A) fn) (a (a (c (fun A (fun A (bool))) =) (a (v (fun (1) A) fn) (c (1) one))) (v A e))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3842099760814092430
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !e. ?fn. fn one = e"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3842099760814092430
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A e) (a (c (fun (fun (fun (1) A) (bool)) (bool)) ?!) (l (v (fun (1) A) fn) (a (a (c (fun A (fun A (bool))) =) (a (v (fun (1) A) fn) (c (1) one))) (v A e))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2717882139108449081
+  library_tag: "core"
+  library_tag: "trivia.ml"
+  pretty_printed: "|- !e. ?!fn. fn one = e"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2717882139108449081
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b)))) (a (c (fun (bool) (bool)) ~) (v (bool) a)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4253254431370940429
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(a \\/ b) ==> ~a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4253254431370940429
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b)))) (a (c (fun (bool) (bool)) ~) (v (bool) b)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2083574596193030367
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(a \\/ b) ==> ~b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2083574596193030367
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b)))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4046236845240459226
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~a ==> ~b ==> ~(a \\/ b)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4046236845240459226
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (c (fun (bool) (bool)) ~) (v (bool) b)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (v (bool) b)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4123007421862445459
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (~a <=> ~b) ==> (a <=> b)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4123007421862445459
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (c (fun (bool) (bool)) ~) (v (bool) q))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1891434113169530448
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(p /\\ q) <=> ~p \\/ ~q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1891434113169530448
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (c (fun (bool) (bool)) ~) (v (bool) q))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 392922024883520428
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(p \\/ q) <=> ~p /\\ ~q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 392922024883520428
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (v (bool) q)))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2734571354838088458
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- p ==> q <=> ~p \\/ q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2734571354838088458
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (c (fun (bool) (bool)) ~) (v (bool) q))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1251791671229743139
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(p ==> q) <=> p /\\ ~q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1251791671229743139
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (c (fun (bool) (bool)) ~) (v (bool) q)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2076440368235384317
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (p <=> q) <=> p /\\ q \\/ ~p /\\ ~q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2076440368235384317
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (c (fun (bool) (bool)) ~) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (v (bool) q))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4571145298808585297
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(p <=> q) <=> p /\\ ~q \\/ ~p /\\ q"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4571145298808585297
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (a (c (fun (bool) (bool)) ~) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (v (bool) q))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4174848468215807327
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (p <=> q) <=> (p \\/ ~q) /\\ (~p \\/ q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4174848468215807327
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (c (fun (bool) (bool)) ~) (v (bool) q)))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3917679360142359403
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ~(p <=> q) <=> (p \\/ q) /\\ (~p \\/ ~q)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3917679360142359403
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) !) (v (fun A (bool)) P)))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) ?) (v (fun A (bool)) P)))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x))))))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (fun A (bool)) (bool)) ?!) (v (fun A (bool)) P)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x)))))) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A x))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (v (fun A (bool)) P) (v A y))) (a (c (fun (bool) (bool)) ~) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x)))))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1535082750921879551
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (~(!) P <=> (?x. ~P x)) /\\  (~(?) P <=> (!x. ~P x)) /\\  (~(?!) P <=> (!x. ~P x) \\/ (?x y. P x /\\ P y /\\ ~(y = x)))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1535082750921879551
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) b))) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (v (bool) c))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1953060264082078421
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- a /\\ b ==> c <=> ~a \\/ ~b \\/ c"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1953060264082078421
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun A (bool)) (bool)) ?!) (v (fun A (bool)) P))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun A (bool)) (bool)) ?) (l (v A x) (a (v (fun A (bool)) P) (v A x))))) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (c (fun (fun A (bool)) (bool)) !) (l (v A y) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A x)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (a (v (fun A (bool)) P) (v A y)))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A x))))))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2020039876438957290
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (?!) P <=> (?x. P x) /\\ (!x y. ~P x \\/ ~P y \\/ y = x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2020039876438957290
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (v (bool) c)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) c))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1447237408543483822
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- a /\\ (b \\/ c) <=> a /\\ b \\/ a /\\ c"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1447237408543483822
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b))) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) b)) (v (bool) c))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1362942549742320715
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (a \\/ b) /\\ c <=> a /\\ c \\/ b /\\ c"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1362942549742320715
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) b)) (v (bool) c)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) c))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 4401070983851301565
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- a \\/ b /\\ c <=> (a \\/ b) /\\ (a \\/ c)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4401070983851301565
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) b))) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (v (bool) c))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2271305540707422190
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- a /\\ b \\/ c <=> (a \\/ c) /\\ (b \\/ c)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2271305540707422190
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (fun ?0 ?1) (fun (fun ?0 ?1) (bool))) =) (v (fun ?0 ?1) s)) (l (v ?0 x) (a (v (fun ?0 ?1) t) (v ?0 x))))) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun ?1 (fun ?1 (bool))) =) (a (v (fun ?0 ?1) s) (v ?0 x))) (a (v (fun ?0 ?1) t) (v ?0 x))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 576089017541234594
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- s = (\\x. t x) <=> (!x. s x = t x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 576089017541234594
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 a) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 a)) (v ?0 c))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) P)) (a (v (fun ?0 (bool)) Q) (v ?0 a))))))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) P)) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 a) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun ?0 (fun ?0 (bool))) =) (v ?0 a)) (v ?0 c))) (a (v (fun ?0 (bool)) Q) (v ?0 a)))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2502120191560580045
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- (!a. a = c ==> (P <=> Q a)) ==> (P <=> (!a. a = c ==> Q a))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2502120191560580045
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) b)) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (v (bool) x0)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) b)) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (v (bool) x1))))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) b)) (v (bool) x1))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (v (bool) x0)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1449375598248950699
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ((b <=> F) ==> (x <=> x0)) /\\ ((b <=> T) ==> (x <=> x1))  ==> (x <=> b /\\ x1 \\/ ~b /\\ x0)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1449375598248950699
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) b)) (c (bool) F))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (v (bool) x0)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) b)) (c (bool) T))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (v (bool) x1))))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) x)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (v (bool) x1))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (v (bool) x0)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1808481953916382263
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- ((b <=> F) ==> (x <=> x0)) /\\ ((b <=> T) ==> (x <=> x1))  ==> (x <=> (~b \\/ x1) /\\ (b \\/ x0))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1808481953916382263
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun B (fun B (bool))) =) (a (v (fun A B) f) (v A x))) (a (a (c (fun (fun A B) (fun A B)) I) (v (fun A B) f)) (v A x)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1840173835002345420
+  library_tag: "core"
+  library_tag: "canon.ml"
+  pretty_printed: "|- !f x. f x = I f x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1840173835002345420
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) b))) (v (bool) a)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1122139855026223720
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- a \\/ b <=> ~b ==> a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1122139855026223720
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (c (fun (bool) (bool)) ~) (v (bool) a)))) (v (bool) a))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 1141025239523095451
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~ ~a <=> a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1141025239523095451
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (c (fun (bool) (bool)) ~) (v (bool) b))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3859938031939644586
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~(a \\/ b) <=> ~a /\\ ~b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3859938031939644586
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (a (c (fun (bool) (bool)) ~) (v (bool) b)))) (a (c (fun (bool) (bool)) ~) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (v (bool) b))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2179085697761689359
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~a \\/ ~b <=> ~(a /\\ b)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2179085697761689359
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (c (bool) F)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2718695146967673195
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~p <=> p ==> F"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2718695146967673195
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (a (c (fun (bool) (bool)) ~) (v (bool) p)))) (a (c (fun (bool) (bool)) ~) (v (bool) p)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1861028887982568193
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- p ==> ~p <=> ~p"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1861028887982568193
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) p))) (v (bool) p))) (v (bool) p))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 2692484476453056113
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~p ==> p <=> p"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2692484476453056113
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A z)))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A z)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 173002229338001270
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- ~(y = z) \\/ y = z"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 173002229338001270
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A x))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y)))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A z)))) (a (a (c (fun A (fun A (bool))) =) (v A y)) (v A z)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2909473506771129933
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- x = x /\\ (~(x = y) \\/ ~(x = z) \\/ y = z)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2909473506771129933
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) b)))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2270161700717384724
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- a ==> b <=> ~a \\/ b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2270161700717384724
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (a (c (fun (bool) (bool)) ~) (v (bool) a))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 141195193670597969
+  library_tag: "core"
+  library_tag: "meson.ml"
+  pretty_printed: "|- (a <=> b) ==> b \\/ ~a"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 141195193670597969
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (c (bool) F)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 3634915235263196553
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a. a ==> ~a ==> F"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3634915235263196553
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) b)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3404764393414576593
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a b. a \\/ b ==> ~a ==> b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3404764393414576593
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) c) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) c))) (v (bool) c)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1798640777836378205
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a c. a ==> ~a \\/ c ==> c"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1798640777836378205
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) c) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) c))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) b)) (v (bool) c))))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3468527281541361183
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a b c. a \\/ b ==> ~a \\/ c ==> b \\/ c"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3468527281541361183
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (v (bool) a)) (v (bool) b)))))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3504417690786988252
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a b. ~a ==> b <=> a \\/ b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3504417690786988252
+}
+theorems {
+  conclusion: "(a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) a) (a (c (fun (fun (bool) (bool)) (bool)) !) (l (v (bool) b) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) b))) (a (a (c (fun (bool) (fun (bool) (bool))) \\/) (a (c (fun (bool) (bool)) ~) (v (bool) a))) (v (bool) b)))))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 96506845967749275
+  library_tag: "core"
+  library_tag: "metis.ml"
+  pretty_printed: "|- !a b. a ==> b <=> ~a \\/ b"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 96506845967749275
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun A (fun A (bool))) =) (a (c (fun (fun A (bool)) A) @) (l (v A y) (a (a (c (fun A (fun A (bool))) =) (v A x)) (v A y))))) (v A x))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2825726650184193454
+  library_tag: "core"
+  library_tag: "quot.ml"
+  pretty_printed: "|- !x. (@y. x = y) = x"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2825726650184193454
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) b)) (v (bool) c)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) b)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) a)) (v (bool) d))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) a)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) b)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) c)) (v (bool) d)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3398317781351706623
+  library_tag: "core"
+  library_tag: "quot.ml"
+  pretty_printed: "|- (a /\\ b /\\ c) /\\ (b ==> a ==> d) ==> a /\\ b /\\ c /\\ d"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3398317781351706623
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty x) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)) (v Repty x))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty x) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)) (v Repty y))) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty y)) (v Repty x)))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty x) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty y) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty z) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)) (v Repty y))) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty y)) (v Repty z)))) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)) (v Repty z)))))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun Absty (bool)) (bool)) !) (l (v Absty a) (a (a (c (fun Absty (fun Absty (bool))) =) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Absty (fun Repty (bool))) dest) (v Absty a)))) (v Absty a))))) (a (c (fun (fun (fun Repty (bool)) (bool)) (bool)) !) (l (v (fun Repty (bool)) r) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun Repty (bool)) (bool)) ?) (l (v Repty x) (a (a (c (fun (fun Repty (bool)) (fun (fun Repty (bool)) (bool))) =) (v (fun Repty (bool)) r)) (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)))))) (a (a (c (fun (fun Repty (bool)) (fun (fun Repty (bool)) (bool))) =) (a (v (fun Absty (fun Repty (bool))) dest) (a (v (fun (fun Repty (bool)) Absty) mk) (v (fun Repty (bool)) r)))) (v (fun Repty (bool)) r)))))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty x) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty y) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)) (v Repty y))) (a (a (c (fun Absty (fun Absty (bool))) =) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Repty (fun Repty (bool))) R) (v Repty x)))) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Repty (fun Repty (bool))) R) (v Repty y)))))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun (fun Absty (bool)) (bool)) (bool)) !) (l (v (fun Absty (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun Repty (bool)) (bool)) !) (l (v Repty x) (a (v (fun Absty (bool)) P) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Repty (fun Repty (bool))) R) (v Repty x))))))) (a (c (fun (fun Absty (bool)) (bool)) !) (l (v Absty x) (a (v (fun Absty (bool)) P) (v Absty x)))))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (c (fun (fun (fun Absty (bool)) (bool)) (bool)) !) (l (v (fun Absty (bool)) P) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun Repty (bool)) (bool)) ?) (l (v Repty x) (a (v (fun Absty (bool)) P) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Repty (fun Repty (bool))) R) (v Repty x))))))) (a (c (fun (fun Absty (bool)) (bool)) ?) (l (v Absty x) (a (v (fun Absty (bool)) P) (v Absty x)))))))) (a (c (fun (fun Absty (bool)) (bool)) !) (l (v Absty x) (a (a (c (fun Absty (fun Absty (bool))) =) (a (v (fun (fun Repty (bool)) Absty) mk) (a (v (fun Repty (fun Repty (bool))) R) (a (c (fun (fun Repty (bool)) Repty) @) (a (v (fun Absty (fun Repty (bool))) dest) (v Absty x)))))) (v Absty x))))))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 3333944427626911849
+  library_tag: "core"
+  library_tag: "quot.ml"
+  pretty_printed: "|- (!x. R x x) /\\  (!x y. R x y <=> R y x) /\\  (!x y z. R x y /\\ R y z ==> R x z) /\\  (!a. mk (dest a) = a) /\\  (!r. (?x. r = R x) <=> dest (mk r) = r)  ==> (!x y. R x y <=> mk (R x) = mk (R y)) /\\    (!P. (!x. P (mk (R x))) <=> (!x. P x)) /\\    (!P. (?x. P (mk (R x))) <=> (?x. P x)) /\\    (!x. mk (R ((@) (dest x))) = x)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3333944427626911849
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) A))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 31846813356229682
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- A ==> A"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 31846813356229682
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) x)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) y)) (v (bool) z)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) x)) (v (bool) y))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) x)) (v (bool) z))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2378600398311076206
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- x ==> y /\\ z <=> (x ==> y) /\\ (x ==> z)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2378600398311076206
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) p)) (v (bool) r))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2511785019163201902
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- p ==> q ==> r <=> q ==> p ==> r"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2511785019163201902
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) D)) (v (bool) C))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) C)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 574651856900071059
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- ((A ==> B) ==> C ==> D) /\\ ((B ==> A) ==> D ==> C)  ==> (A <=> B)  ==> (C <=> D)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 574651856900071059
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) C)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 602323341664058408
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- ((A ==> B) ==> C) /\\ ((B ==> A) ==> D) ==> (A <=> B) ==> C /\\ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 602323341664058408
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3296216493973277289
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- ((A ==> B) ==> C) ==> (A <=> B) ==> C /\\ (B ==> A)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3296216493973277289
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (v (bool) D))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (v (bool) D))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 1305246386723748533
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- ((B ==> A) ==> D) ==> (A <=> B) ==> (A ==> B) /\\ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1305246386723748533
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) D)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) C)) (v (bool) D))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3011422515679005275
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (C ==> A ==> B) /\\ (D ==> B ==> A) ==> C /\\ D ==> (A <=> B)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3011422515679005275
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3094464808075112191
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (C ==> A ==> B) ==> C /\\ (B ==> A) ==> (A <=> B)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3094464808075112191
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) D)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (v (bool) D))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) A)) (v (bool) B))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 4391649355967609218
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (D ==> B ==> A) ==> (A ==> B) /\\ D ==> (A <=> B)"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4391649355967609218
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2439440361697630767
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (B ==> A) /\\ (A ==> B ==> C ==> D) ==> (A ==> C) ==> B ==> D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2439440361697630767
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) D)) (v (bool) C)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) D))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 2221066039138750292
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (A ==> B) /\\ (A ==> B ==> D ==> C) ==> (B ==> D) ==> A ==> C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2221066039138750292
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2350059198472119871
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (A ==> C ==> D) ==> (A ==> C) ==> A ==> D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2350059198472119871
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1062763731840552967
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (C ==> A ==> B) /\\ (A ==> B ==> C ==> D) ==> A /\\ C ==> B /\\ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1062763731840552967
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) B)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: TESTING
+  fingerprint: 237406522521133178
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (C ==> A ==> B) ==> A /\\ C ==> B /\\ C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 237406522521133178
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (v (bool) D)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) D))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 551054813498722836
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (A ==> C ==> D) ==> A /\\ C ==> A /\\ D"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 551054813498722836
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) D)) (v (bool) C))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) D))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 405200044894797813
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (B ==> A) /\\ (B ==> D ==> C) ==> B /\\ D ==> A /\\ C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 405200044894797813
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 2650280382772910202
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (B ==> A) ==> B /\\ C ==> A /\\ C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 2650280382772910202
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) C)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) A)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) B)) (v (bool) C))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) A)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 28033777833960563
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (C ==> B ==> A) ==> B /\\ C ==> A /\\ C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 28033777833960563
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (v (bool) C)))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) B)) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) A)) (v (bool) C))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 3758721774244806535
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- A ==> B ==> C <=> B ==> A ==> C"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 3758721774244806535
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) P))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) Q)) (v (bool) R)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) Q)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) P))) (v (bool) R))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (v (bool) Q)))))"
+  tag: THEOREM
+  training_split: TRAINING
+  fingerprint: 1909485002465524596
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (~P ==> (Q <=> R)) ==> (Q <=> (~P ==> R) /\\ (P ==> Q))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 1909485002465524596
+}
+theorems {
+  conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) Q)) (v (bool) R)))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (v (bool) Q)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (v (bool) P)) (v (bool) R))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (bool) (bool)) ~) (v (bool) P))) (v (bool) Q)))))"
+  tag: THEOREM
+  training_split: VALIDATION
+  fingerprint: 4584785976104007141
+  library_tag: "core"
+  library_tag: "impconv.ml"
+  pretty_printed: "|- (P ==> (Q <=> R)) ==> (Q <=> (P ==> R) /\\ (~P ==> Q))"
+  proof_function: "TAC_PROOF"
+  goal_fingerprint: 4584785976104007141
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A B) (bool)) (bool)) !) (l (v (fun A B) f) (a (c (fun (fun A (bool)) (bool)) !) (l (v A x) (a (a (c (fun B (fun B (bool))) =) (a (a (c (fun (fun A B) (fun A B)) LET) (v (fun A B) f)) (v A x))) (a (v (fun A B) f) (v A x)))))))"
+  tag: DEFINITION
+  fingerprint: 2416087689359344467
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun B (fun B (bool))) =) (a (a (v (fun (fun A B) (fun A B)) LET) (v (fun A B) f)) (v A x))) (a (v (fun A B) f) (v A x)))"
+    constants: "LET"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- !f x. LET f x = f x"
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A t) (a (a (c (fun A (fun A (bool))) =) (a (c (fun A A) LET_END) (v A t))) (v A t))))"
+  tag: DEFINITION
+  fingerprint: 4212896599191796434
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun A (fun A (bool))) =) (a (v (fun A A) LET_END) (v A t))) (v A t))"
+    constants: "LET_END"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- !t. LET_END t = t"
+}
+theorems {
+  conclusion: "(a (c (fun (fun (fun A (bool)) (bool)) (bool)) !) (l (v (fun A (bool)) P) (a (a (c (fun A (fun A (bool))) =) (a (c (fun (fun A (bool)) A) GABS) (v (fun A (bool)) P))) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P)))))"
+  tag: DEFINITION
+  fingerprint: 583117853485530843
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun A (fun A (bool))) =) (a (v (fun (fun A (bool)) A) GABS) (v (fun A (bool)) P))) (a (c (fun (fun A (bool)) A) @) (v (fun A (bool)) P)))"
+    constants: "GABS"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- !P. GABS P = (@) P"
+}
+theorems {
+  conclusion: "(a (c (fun (fun A (bool)) (bool)) !) (l (v A a) (a (c (fun (fun A (bool)) (bool)) !) (l (v A b) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun A (fun A (bool))) GEQ) (v A a)) (v A b))) (a (a (c (fun A (fun A (bool))) =) (v A a)) (v A b)))))))"
+  tag: DEFINITION
+  fingerprint: 2669826481516705327
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (v (fun A (fun A (bool))) GEQ) (v A a)) (v A b))) (a (a (c (fun A (fun A (bool))) =) (v A a)) (v A b)))"
+    constants: "GEQ"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- !a b. GEQ a b <=> a = b"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) (fun (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) (bool))) =) (c (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) _SEQPATTERN)) (l (v (fun ?0 (fun ?1 (bool))) r) (l (v (fun ?0 (fun ?1 (bool))) s) (l (v ?0 x) (a (a (a (c (fun (bool) (fun (fun ?1 (bool)) (fun (fun ?1 (bool)) (fun ?1 (bool))))) COND) (a (c (fun (fun ?1 (bool)) (bool)) ?) (l (v ?1 y) (a (a (v (fun ?0 (fun ?1 (bool))) r) (v ?0 x)) (v ?1 y))))) (a (v (fun ?0 (fun ?1 (bool))) r) (v ?0 x))) (a (v (fun ?0 (fun ?1 (bool))) s) (v ?0 x)))))))"
+  tag: DEFINITION
+  fingerprint: 2332380761290602570
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) (fun (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) (bool))) =) (v (fun (fun ?0 (fun ?1 (bool))) (fun (fun ?0 (fun ?1 (bool))) (fun ?0 (fun ?1 (bool))))) _SEQPATTERN)) (l (v (fun ?0 (fun ?1 (bool))) r) (l (v (fun ?0 (fun ?1 (bool))) s) (l (v ?0 x) (a (a (a (c (fun (bool) (fun (fun ?1 (bool)) (fun (fun ?1 (bool)) (fun ?1 (bool))))) COND) (a (c (fun (fun ?1 (bool)) (bool)) ?) (l (v ?1 y) (a (a (v (fun ?0 (fun ?1 (bool))) r) (v ?0 x)) (v ?1 y))))) (a (v (fun ?0 (fun ?1 (bool))) r) (v ?0 x))) (a (v (fun ?0 (fun ?1 (bool))) s) (v ?0 x)))))))"
+    constants: "_SEQPATTERN"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- _SEQPATTERN = (\\r s x. if ?y. r x y then r x else s x)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (c (fun (bool) (fun (bool) (bool))) _UNGUARDED_PATTERN)) (l (v (bool) p) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r)))))"
+  tag: DEFINITION
+  fingerprint: 3988811714288460886
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun (bool) (fun (bool) (bool))) (fun (fun (bool) (fun (bool) (bool))) (bool))) =) (v (fun (bool) (fun (bool) (bool))) _UNGUARDED_PATTERN)) (l (v (bool) p) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r)))))"
+    constants: "_UNGUARDED_PATTERN"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- _UNGUARDED_PATTERN = (\\p r. p /\\ r)"
+}
+theorems {
+  conclusion: "(a (a (c (fun (fun (bool) (fun (bool) (fun (bool) (bool)))) (fun (fun (bool) (fun (bool) (fun (bool) (bool)))) (bool))) =) (c (fun (bool) (fun (bool) (fun (bool) (bool)))) _GUARDED_PATTERN)) (l (v (bool) p) (l (v (bool) g) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) g)) (v (bool) r)))))))"
+  tag: DEFINITION
+  fingerprint: 4584992950189028247
+  definition {
+    definition_type: "DRULE"
+    definition_term: "(a (a (c (fun (fun (bool) (fun (bool) (fun (bool) (bool)))) (fun (fun (bool) (fun (bool) (fun (bool) (bool)))) (bool))) =) (v (fun (bool) (fun (bool) (fun (bool) (bool)))) _GUARDED_PATTERN)) (l (v (bool) p) (l (v (bool) g) (l (v (bool) r) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) g)) (v (bool) r)))))))"
+    constants: "_GUARDED_PATTERN"
+  }
+  library_tag: "core"
+  library_tag: "pair.ml"
+  pretty_printed: "|- _GUARDED_PATTERN = (\\p g r. p /\\ g /\\ r)"
+}

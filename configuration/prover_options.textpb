@@ -1,0 +1,16 @@
+path_tactics: '/data/configuration/hollight_tactics.textpb'
+path_tactics_replace: '/data/configuration/hollight_tactics_replacements_nogen.textpb'
+path_theorem_database: '/data/theorem_database_mini_changed_AA.textpb'
+path_model_prefix: '/data/checkpoints/holparam_3330000/model.ckpt-3330000'
+model_architecture: PAIR_DEFAULT
+
+prover: 'bfs'
+bfs_options: {
+  max_top_suggestions: 20
+  max_successful_branches: 5
+  max_explored_nodes: 120
+}
+library_tags: "c-fDL.ml"
+splits_to_prove: VALIDATION
+timeout_seconds: 120.0
+ 
