@@ -1019,45 +1019,45 @@ theorems {
 }
 
 theorems {
-  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C))))))) (a (c (fun (form) (strG)) gg) (v (form) C))))"
+  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (v (form) C))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C))))))))"
   tag: THEOREM
   training_split: VALIDATION
   fingerprint: 9999
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C))))--> gg C)"
+  pretty_printed: "|--(ff C -->  gg (nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))))"
   proof_function: "TAC_PROOF"
   goal_fingerprint: 9999
 }
 
 theorems {
-  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (v (form) C))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (v (form) B)))) (v (form) B))))))))"
+  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (v (form) C))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (v (form) B)))) (v (form) B))))))))"
   tag: THEOREM
   training_split: VALIDATION
   fingerprint: 9999
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. C)) --> gg (nn (C /. (pp ((nn (C /. B)) ** B)))))"
+  pretty_printed: "|--(ff (nn (C /. C)) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (pp ((nn (C /. B)) ** B)))))"
   proof_function: "TAC_PROOF"
   goal_fingerprint: 9999
 }
 
 theorems {
-  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) A)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) A))))))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (v (form) C))))))"
+  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) A)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) A))))))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (v (form) C))))))"
   tag: THEOREM
   training_split: VALIDATION
   fingerprint: 9999
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn (A /. (nn ( C\. A)))))) --> gg (nn (C /. C)))"
+  pretty_printed: "|--(ff (nn (C /. (nn (A /. (nn ( C\. A)))))) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. C)))"
   proof_function: "TAC_PROOF"
   goal_fingerprint: 9999
 }
 
 theorems {
-  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) A)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) D)))) (v (form) A))))))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) D)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) D)))))) (v (form) D))))))))"
+  conclusion: "(a (c (fun (seq) (bool)) |--) (a (a (c (fun (strF) (fun (strG) (seq))) -->) (a (c (fun (form) (strF)) ff) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) C)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) A)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) D)))) (v (form) A))))))))) (a (c (fun (form) (strG)) gg) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (a (c (fun (pform) (form)) pp) (a (a (c (fun (form) (fun (form) (pform))) **) (v (form) A)) (v (form) B)))) (v (form) C)))))) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) /.) (v (form) D)) (a (c (fun (nform) (form)) nn) (a (a (c (fun (form) (fun (form) (nform))) \\.) (v (form) C)) (v (form) D)))))) (v (form) D))))))))"
   tag: THEOREM
   training_split: VALIDATION
   fingerprint: 9999
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn (A /. (nn ( (nn (C \. D))\. A)))))) --> gg (nn (C /. (nn ((nn (D /. (nn (C \. D)))) \. D)))))"
+  pretty_printed: "|--(ff (nn (C /. (nn (A /. (nn ( (nn (C \. D))\. A)))))) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn ((nn (D /. (nn (C \. D)))) \. D)))))"
   proof_function: "TAC_PROOF"
   goal_fingerprint: 9999
 }

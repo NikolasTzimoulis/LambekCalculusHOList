@@ -748,14 +748,14 @@ theorems {
 
 
 theorems {
-  conclusion: "(a (c (fun (fun (loop) (bool)) (bool)) !) (l (v (loop) A) (a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (v (fun (loop) (stable_sy)) focf) (v (loop) A))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) A))))))"
+  conclusion: "(a (c (fun (fun (loop) (bool)) (bool)) !) (l (v (loop) A) (a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (v (loop) A))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) A))))))"
   tag: THEOREM
   training_split: TRAINING
-  fingerprint: 205278854658789786
+  fingerprint: 1693479518508578392
   library_tag: "c-DL.ml"
-  pretty_printed: "!A. |-- (focf A --> gg A)" 
+  pretty_printed: "!A. |--(ff A --> gg A)" 
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 205278854658789786
+  goal_fingerprint: 1693479518508578392
 }
 
 
@@ -896,47 +896,47 @@ theorems {
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C))))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) C))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (v (loop) C))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 592760447585349764
+  fingerprint: 2240419476433202733
   library_tag: "c-DL.ml"
-  pretty_printed: "|--(ff ((A ** B) \. ((A ** B) ** C))--> gg C)"
+  pretty_printed: "|--(ff C -->  gg ((A ** B) \. ((A ** B) ** C)))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 592760447585349764
+  goal_fingerprint: 2240419476433202733
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (v (loop) C)))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (v (loop) B))) (v (loop) B))))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (v (loop) C)))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (v (loop) B))) (v (loop) B))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 4478005601122269348
+  fingerprint: 3881588836752680981
   library_tag: "c-DL.ml"
-  pretty_printed: "|--(ff ((((A ** B)) \. ((A ** B) ** C)) /. C) --> gg (C /. ((C /. B) ** B)))"
+  pretty_printed: "|--(ff (C /. C) -->  gg (((A ** B) \. ((A ** B) ** C)) /. ((C /. B) ** B)))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 4478005601122269348
+  goal_fingerprint: 3881588836752680981
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) A)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) A)))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (v (loop) C)))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) A)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) A)))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (v (loop) C)))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 438739952271531602
+  fingerprint: 3193825882214422691
   library_tag: "c-DL.ml"
-  pretty_printed: "|--(ff ((((A ** B) \. ((A ** B) ** C)) /. (A /. (C\. A)))) --> gg (C /. C))"
+  pretty_printed: "|--(ff (C /. (A /. (C\. A))) -->  gg ((((A ** B)) \. ((A ** B) ** C)) /. C))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 438739952271531602
+  goal_fingerprint: 3193825882214422691
 }
 
 theorems {
-  conclusion:  "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) A)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) D))) (v (loop) A)))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) D)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) D)))) (v (loop) D))))))"
+  conclusion:  "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) C)) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) A)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) D))) (v (loop) A)))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (a (a (c (fun (loop) (fun (loop) (loop))) *.) (v (loop) A)) (v (loop) B))) (v (loop) C)))) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (a (a (c (fun (loop) (fun (loop) (loop))) **.) (v (loop) D)) (a (a (c (fun (loop) (fun (loop) (loop))) *|) (v (loop) C)) (v (loop) D)))) (v (loop) D))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 3287950616156282951
+  fingerprint: 3391155692761143795
   library_tag: "c-DL.ml"
-  pretty_printed: "|--(ff (((A ** B) \. ((A ** B) ** C)) /. ((A /. ((C \. D)\. A)))) --> gg (C /. ((D /. (C \. D)) \. D)))"
+  pretty_printed: "|--(ff (C /. (A /. ((C \. D)\. A))) -->  gg (((A ** B) \. ((A ** B) ** C)) /. ((D /. (C \. D)) \. D)))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 3287950616156282951
+  goal_fingerprint: 3391155692761143795
 }
 
 theorems {

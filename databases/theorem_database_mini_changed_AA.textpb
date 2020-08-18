@@ -1019,47 +1019,47 @@ theorems {
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C))))))) (a (c (fun (loop) (tri_sy)) TAGB) (v (loop) C))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (v (loop) C))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C))))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 3864113998864159899
+  fingerprint: 2658949707896344285
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C))))--> gg C)"
+  pretty_printed: "|--(ff C -->  gg (nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 3864113998864159899
+  goal_fingerprint: 2658949707896344285
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (v (loop) C))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (v (loop) B)))) (v (loop) B))))))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (v (loop) C))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (v (loop) B)))) (v (loop) B))))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 1971127210435595120
+  fingerprint: 3805144081109071038
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. C)) --> gg (nn (C /. (pp ((nn (C /. B)) ** B)))))"
+  pretty_printed: "|--(ff (nn (C /. C)) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (pp ((nn (C /. B)) ** B)))))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 1971127210435595120
+  goal_fingerprint: 3805144081109071038
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) A)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) A))))))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (v (loop) C))))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) A)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) A))))))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (v (loop) C))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 2428460859537206287
+  fingerprint: 4367934866886870413
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn (A /. (nn ( C\. A)))))) --> gg (nn (C /. C)))"
+  pretty_printed: "|--(ff (nn (C /. (nn (A /. (nn ( C\. A)))))) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. C)))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 2428460859537206287
+  goal_fingerprint: 4367934866886870413
 }
 
 theorems {
-  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) A)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) D)))) (v (loop) A))))))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) D)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) D)))))) (v (loop) D))))))))"
+  conclusion: "(a (c (fun (scs_v39) (bool)) RC) (a (a (c (fun (stable_sy) (fun (tri_sy) (scs_v39))) <=.) (a (c (fun (loop) (stable_sy)) mark_term) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) C)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) A)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) D)))) (v (loop) A))))))))) (a (c (fun (loop) (tri_sy)) TAGB) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (a (c (fun (cc_v11) (loop)) plane) (a (a (c (fun (loop) (fun (loop) (cc_v11))) *.) (v (loop) A)) (v (loop) B)))) (v (loop) C)))))) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) **.) (v (loop) D)) (a (c (fun (finite_product) (loop)) plane_norm) (a (a (c (fun (loop) (fun (loop) (finite_product))) *|) (v (loop) C)) (v (loop) D)))))) (v (loop) D))))))))"
   tag: THEOREM
   training_split: VALIDATION
-  fingerprint: 255552070153503686
+  fingerprint: 4316782513603974331
   library_tag: "c-fDL.ml"
-  pretty_printed: "|--(ff (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn (A /. (nn ( (nn (C \. D))\. A)))))) --> gg (nn (C /. (nn ((nn (D /. (nn (C \. D)))) \. D)))))"
+  pretty_printed: "|--(ff (nn (C /. (nn (A /. (nn ( (nn (C \. D))\. A)))))) -->  gg (nn ((nn ((pp (A ** B)) \. (pp ((pp (A ** B)) ** C)))) /. (nn ((nn (D /. (nn (C \. D)))) \. D)))))"
   proof_function: "TAC_PROOF"
-  goal_fingerprint: 255552070153503686
+  goal_fingerprint: 4316782513603974331
 }
 
 theorems {
